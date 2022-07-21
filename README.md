@@ -5,7 +5,7 @@ Domino4 is a rapid electronics development solution for developing, making produ
 
 Each xChip are a multiple of 32x32 mm.
 
-![xChip Layout](https://cdn.shopify.com/s/files/1/1734/1465/files/xChip_layout_RL02_a55cf1bb-5d4c-4e75-ae47-94d59eea4dd3.jpg?v=1587708881)
+![xChip Layout](assets/Example-xChip.png)
 
 **1.1 xBus**
 
