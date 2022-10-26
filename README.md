@@ -40,4 +40,4 @@ Thi spin is connected to the Core like this
 | --- | --- | --- | --- | --- | 
 | CWA - Standard Core | ESP32-WROOM-32 | GPIO2 | 24 | Touch2 RTC12 ADC2_2 |
 | CWV - Extended Core | ESP32-WROOM-32 | nc | nc | n/a |
-| CWP - Power Core | ESP32-C3 | GPIO0 | 4 | ADC1_0 |
+| CWB - Battery Core | ESP32-C3 | GPIO0 | 4 | ADC1_0 |
