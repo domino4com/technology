@@ -27,7 +27,7 @@ Domino4's mission is to simplify building electronic devices. We have chosen I2C
 
 **2.2 SPI**
 
-SPI is only available via the 1mm Extension slot on (currently) the extended core (CWV)
+SPI is only available via the 1mm Extension slot on the extended core (CWV) and the battery core (CWB).
 
 **2.3 Serial (also known as UART or RS232C)**
 
