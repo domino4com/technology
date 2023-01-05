@@ -56,39 +56,40 @@ Thi spin is connected to the Core like this
 | CWV - Extended Core | ESP32-WROOM-32 | nc | nc | n/a |
 | CWB - Battery Core | ESP32-C3 | GPIO0 | 4 | ADC1_0 |
 
+<img align=right src="assets/PCIe.png" width="300">
+
 ## 3. CAN Bus Interface
 
 ### 3.1 Layout
 
 The CAN bus interface found only on the extended core [CVW](https://github.com/domino4com/CWV) is based on a PCI Express connector, specifically the PCI Express X1.
 
-![CAN Bus](assets/Spine.svg "CAN bus")
-
-
 This connector has 7 pins on the short side, and in order to make the connector reversible, we only use 7 pins on the long side as well. Pin 14 on the top side has pin 1 below it on the bottom side, hence the core can be inserted either way into a PCI-E connector.
 
 ### 3.2 Pinout
 
-Definition:
-- Internal refers to same pins as on the xBus connector, so own developed PCBs can interface using this connector instead of xBus connector. These pins are *NOT* used when multiple extended cores are stacked together in a mission.
-- External reefers to pins used to communiucate between extended cores and mission control cores. These and the power (Global) pins are the only one used when in this case.
+Coverage Definition:
+- `Internal` refers to same pins as on the xBus connector, so own developed PCBs can interface using this connector instead of xBus connector. These pins are *NOT* used when multiple extended cores are stacked together in a mission.
+- `External` refers to pins used to communicate between extended cores and mission control cores. These and the power (`Global`) pins are the only one used in this case.
 
-| Pin | Int/Ext/Glb | Name | Type | Description | 
+![CAN Bus](assets/Spine.svg "CAN bus")
+
+| Pin | Coverage | Name | Type | Description | 
 | ---: | :---: | --- | --- | --- |
-| 1   | Global | Vcc | Power | 3.3 volt | 
-| 2   | Global | Vsrc | Power | Power from original power source | 
-| 3   | Internal | IO | Signal |  |  
-| 4   | External | CAN High | Signal | From CAN Transciever |  
-| 5   | External | CAN Low | Signal |  From CAN Transciever|  
-| 6   | External | CAN Enable | Signal |  See CAN Enable note|  
-| 7   | External | EXT Enable | Signal |  See EXT Enable note|  
-| 8   | Internal | Reset | Signal |  |  
-| 9   | Internal | PROG | Signal |  |  
-| 10  | Internal | TXD | Signal |  Serial Transmit/Receive|  
-| 11  | Internal | RXD | Signal | Serial Transmit/Receive |  
-| 12  | Internal | SDA | Signal | I<sup>2</sup>C |  
-| 13  | Internal | SCL | Signal | I<sup>2</sup>C |  
-| 14  | Global | GND | Power | Ground |    
+| 1   | `Global` | Vcc | Power | 3.3 volt | 
+| 2   | `Global` | Vsrc | Power | Power from original power source | 
+| 3   | `Internal` | IO | Signal |  |  
+| 4   | `External` | CAN High | Signal | From CAN Transciever |  
+| 5   | `External` | CAN Low | Signal |  From CAN Transciever|  
+| 6   | `External` | CAN Enable | Signal |  See CAN Enable note|  
+| 7   | `External` | EXT Enable | Signal |  See EXT Enable note|  
+| 8   | `Internal` | Reset | Signal |  |  
+| 9   | `Internal` | PROG | Signal |  |  
+| 10  | `Internal` | TXD | Signal |  Serial Transmit/Receive|  
+| 11  | `Internal` | RXD | Signal | Serial Transmit/Receive |  
+| 12  | `Internal` | SDA | Signal | I<sup>2</sup>C |  
+| 13  | `Internal` | SCL | Signal | I<sup>2</sup>C |  
+| 14  | `Global` | GND | Power | Ground |    
 
 ### 3.3 Pinout notes
  
