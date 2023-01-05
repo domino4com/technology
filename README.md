@@ -47,7 +47,7 @@ Thi spin is connected to the Core like this
 **3.1 Layout**
 
 The CAN bus interface found only on the extended core [CVW](https://github.com/domino4com/CWV) is based on a PCI Express connector, specifically the PCI Express X1.
-TODO: Image.
+<img align=center src="assets/Spine.svg" width="600">
 This connector has 7 pins on the short side, and in order to make the connector reversible, we only use 7 pins on the long side as well.
 
 **3.2 Pinout**
