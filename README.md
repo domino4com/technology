@@ -24,7 +24,7 @@ Each xChip are a multiple of 32x32 mm.
 xChips have a xBus connection space for each 32mm side, unless component size limits space for the connector on some sides. 
 
 | Top Side Pin | Name | Type | Description |     | Bottom Side Pin | Name | Type | Description |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| ---: | --- | --- | --- | --- | ---: | --- | --- | --- |
 | 1   | SCL | Signal | I<sup>2</sup>C |     | 6   | Reset | Signal | Reset |
 | 2   | SDA | Signal | I<sup>2</sup>C |     | 7   | Prog | Signal | Programming Pin |
 | 3   | GND | Power | Ground |     | 8   | RX/TX | Signal | Serial Receive/Transmit |
@@ -62,7 +62,8 @@ Thi spin is connected to the Core like this
 
 The CAN bus interface found only on the extended core [CVW](https://github.com/domino4com/CWV) is based on a PCI Express connector, specifically the PCI Express X1.
 
-<img align=centre src="assets/Spine.svg" width="600">
+![CAN Bus](assets/Spine.svg "CAN bus")
+
 
 This connector has 7 pins on the short side, and in order to make the connector reversible, we only use 7 pins on the long side as well. Pin 14 on the top side has pin 1 below it on the bottom side, hence the core can be inserted either way into a PCI-E connector.
 
@@ -72,8 +73,8 @@ Definition:
 - Internal refers to same pins as on the xBus connector, so own developed PCBs can interface using this connector instead of xBus connector. These pins are *NOT* used when multiple extended cores are stacked together in a mission.
 - External reefers to pins used to communiucate between extended cores and mission control cores. These and the power (Global) pins are the only one used when in this case.
 
-| Top Side Pin | Int/Ext/Glb | Name | Type | Description | 
-| --- | --- | --- | --- | --- |
+| Pin | Int/Ext/Glb | Name | Type | Description | 
+| ---: | :---: | --- | --- | --- |
 | 1   | Global | Vcc | Power | 3.3 volt | 
 | 2   | Global | Vsrc | Power | Power from original power source | 
 | 3   | Internal | IO | Signal |  |  
