@@ -120,30 +120,30 @@ This connector has 10 pins on the both sides, and in order to make the connector
 
 ### 4.2 Pinout
 
-<img align=middle src="assets/SFP-pinout.svg" width="300">
+<img align=right src="assets/SFP-pinout.svg" width="300">
 
-| Pin | Group | Name | CWV pin | CWB pin |Description | 
-| ---: | :---: | --- | --- | --- | --- |
-| 1   | `Power` | Vcc |  | |3.3 volt | 
-| 2   | `SPI` | MISO |  |  |  |
-| 3   | `SPI` | MOSI |  |  |  |
-| 4   | `SPI` | SCK |  |  |  |
-| 5   | `GPIO` | | 15 | 4|  |
-| 6   | `GPIO` | | 33 | 0|  |
-| 7   | `External` | Ext EN |  n/a | IO1 | connection fed through from the CAN bus interface |
-| 8  | `I2C` | SCL |  |  |  |
-| 9  | `I2C` | SDA |  |  |  |
-| 10 | `Power` | GND |  |  |  |
+| Pin | Group | Name | CWV pin | CWB pin |
+| ---: | :---: | --- | ---: | ---: | 
+| 1   | `Power` | Vcc |  | |
+| 2   | `SPI` | MISO |  |  | 
+| 3   | `SPI` | MOSI |  |  |  
+| 4   | `SPI` | SCK |  |  |  
+| 5   | `GPIO` | | 15 | 4|  
+| 6   | `GPIO` | | 33 | 0|  
+| 7   | `External` | Ext EN |  n/a | 1 | 
+| 8  | `I2C` | SCL |  |  |  
+| 9  | `I2C` | SDA |  |  |  
+| 10 | `Power` | GND |  |  |  
 
 ### 4.3 IO pin use
 
 The following is a table of IO pins used for various extension slot modules
 
-| Name | Description | Pin 5 | Pin 6 | Pin 7 | Notes | 
-| --- | --- | ---: | ---: | ---: | --- |
-| EL4 | LoRa | CS/NSS | DIO0 | n/a | |
-| ECE | Ethernet | CS | n/a | EN | |
-| EBS | SD Card | CS | n/a | n/a | |
+| Name | Description | Pin 5 | Pin 6 | Pin 7 |
+| --- | --- | :---: | :---: | :---: | 
+| EL4 | LoRa | CS/NSS | DIO0 | n/a |
+| ECE | Ethernet | CS | n/a | EN | 
+| EBS | SD Card | CS | n/a | n/a | 
 
 ### 4.4 PCB Design
 
