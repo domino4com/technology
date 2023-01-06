@@ -127,9 +127,20 @@ TODO: Pinout diagram
 | 2   | `SPI` | MISO |  |  |  |
 | 3   | `SPI` | MOSI |  |  |  |
 | 4   | `SPI` | SCK |  |  |  |
-| 5   | `GPIO` | | x | x|  |
-| 6   | `GPIO` | | x | x|  |
-| 7   | `GPIO` | | x | x|  |
+| 5   | `GPIO` | | 15 | 4|  |
+| 6   | `GPIO` | | 33 | 0|  |
+| 7   | `External` | Ext EN |  n/a | IO1 | connection fed through from the CAN bus interface |
 | 8  | `I2C` | SCL |  |  |  |
 | 9  | `I2C` | SDA |  |  |  |
 | 10 | `Power` | GND |  |  |  |
+
+### 4.3 IO pin use
+
+The following is a table of IO pins used for various extension slot modules
+
+| Name | Description | Pin 5 | Pin 6 | Pin 7 | Notes | 
+| --- | --- | ---: | ---: | ---: | --- |
+| EL4 | LoRa | CS/NSS | DIO0 | n/a | |
+| ECE | Ethernet | CS | n/a | EN | |
+| EBS | SD Card | CS | n/a | n/a | |
+
