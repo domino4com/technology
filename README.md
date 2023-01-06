@@ -105,3 +105,31 @@ Similar to CAN Enable, this is signal passed through to the extension slot that 
 
 Like the enable pins above allowing the mission control to control communiucation from the indvidual cores, power is also regulated, but before it reaches the extended core. Using the CAN Bus interface, power is provided on both side, both for redundany, but also spreading the load (heat) on the backbone. The power will be limited using resettable fuses, but might be upgraded down the line to measure, warn and kill power intelligently. 
 
+## 4. Extension Slot
+
+The Extension Slot can be found  on the extended core [CWV](https://github.com/domino4com/CWV) as well as on the battery core [CWB](https://github.com/domino4com/CWB)
+
+### 4.1 Layout
+The extension slot is using a SFP (Small Form Factor Pluggable) connector.
+TODO: Image
+
+This connector has 10 pins on the both sides, and in order to make the connector reversible, we reuse the 10 pins on the bottom side. Pin 10 on the top side has pin 1 below it on the bottom side, hence the extension modules can be inserted either way into a SFP connector.
+
+> The PCB for the extension slot needs to be **1mm** thick, unlike the standard 1.6mm thickness used everywhere else.
+
+### 4.2 Pinout
+
+TODO: Pinout diagram
+
+| Pin | Group | Name | CWV pin | CWB pin |Description | 
+| ---: | :---: | --- | --- | --- | --- |
+| 1   | `Power` | Vcc |  | |3.3 volt | 
+| 2   | `SPI` | MISO |  |  |  |
+| 3   | `SPI` | MOSI |  |  |  |
+| 4   | `SPI` | SCK |  |  |  |
+| 5   | `GPIO` | | x | x|  |
+| 6   | `GPIO` | | x | x|  |
+| 7   | `GPIO` | | x | x|  |
+| 8  | `I2C` | SCL |  |  |  |
+| 9  | `I2C` | SDA |  |  |  |
+| 10 | `Power` | GND |  |  |  |
