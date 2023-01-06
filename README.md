@@ -105,7 +105,7 @@ Similar to CAN Enable, this is signal passed through to the extension slot that 
 
 Like the enable pins above allowing the mission control to control communiucation from the indvidual cores, power is also regulated, but before it reaches the extended core. Using the CAN Bus interface, power is provided on both side, both for redundany, but also spreading the load (heat) on the backbone. The power will be limited using resettable fuses, but might be upgraded down the line to measure, warn and kill power intelligently. 
 
-<img align=middle src="assets/SFP.png" width="300">
+<img align=right src="assets/SFP.png" width="300">
 
 ## 4. Extension Slot
 
@@ -120,7 +120,7 @@ This connector has 10 pins on the both sides, and in order to make the connector
 
 ### 4.2 Pinout
 
-<img align=right src="assets/SFP-pinout.svg" width="300">
+<img align=middle src="assets/SFP-pinout.svg" width="300">
 
 | Pin | Group | Name | CWV pin | CWB pin |Description | 
 | ---: | :---: | --- | --- | --- | --- |
